@@ -1,0 +1,25 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.divBox {
+    width: 100px;
+    height: 1000px;
+    border: 2px solid black;
+}
+
+.div {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+#container {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
