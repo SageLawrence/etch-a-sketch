@@ -7,7 +7,7 @@ function boxCreate(edgeCount) { // function to create gid of specified size
         let container = document.getElementById('container'); // selects the main container div from the HTML
         container.appendChild(divBox); // adds the column within the container div
 
-        for (let j = 0; j <  edgeCount; j++) { // loops through for div box creation within columns
+        for (let j = 0; j < edgeCount; j++) { // loops through for div box creation within columns
 
             let div = document.createElement('div'); // creates one div in memory that will make a box
             div.classList.add('div'); // adds a CSS class for box traits
@@ -17,13 +17,23 @@ function boxCreate(edgeCount) { // function to create gid of specified size
 
     }
 
-    hoverAdd() // calls funciton to add color
+    hoverAdd() // calls function to add color
 
 }
 
 const button = document.querySelector('.selector'); // sets button to variable
 
-button.addEventListener('click', sizeSelect); // button listens for click
+button.addEventListener('click', removeGrid); // button listens for click and runs function to remove old grid
+
+function removeGrid() {
+
+    const removes = document.querySelector('#container'); // selects the overall container
+
+    removes.textContent = ''; // removes all divs from the container
+
+    sizeSelect(); // runs size selection function for new grid
+
+}
 
 function sizeSelect() {
 
@@ -44,6 +54,7 @@ function sizeSelect() {
 function hoverAdd() {
 
     const divs = document.querySelectorAll('.div'); // selects all divs with class .div
+
     divs.forEach(div => div.addEventListener('mouseover', sketch)); // adds listener for mouseover to call sketch function
 
 }
