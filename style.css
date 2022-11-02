@@ -9,7 +9,7 @@ html {
 .divBox {
     display: flex;
     flex-direction: column;
-    flex: 1; /* come back to comment through all flex property uses */
+    flex: 1;
     height: 1000px;
 }
 
@@ -25,10 +25,6 @@ html {
     height: 1000px;
     width: 1000px;
     flex-basis: 0;
-}
-
-.hovered {
-    background-color: black;
 }
 
 body {
