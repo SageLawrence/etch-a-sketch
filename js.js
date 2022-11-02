@@ -17,22 +17,21 @@ function boxCreate(edgeCount) { // function to create gid of specified size
 
     }
 
-    hoverAdd()
+    hoverAdd() // calls funciton to add color
 
 }
 
+const button = document.querySelector('.selector'); // sets button to variable
 
-const button = document.querySelector('.selector'); //
-
-button.addEventListener('click', sizeSelect);
+button.addEventListener('click', sizeSelect); // button listens for click
 
 function sizeSelect() {
 
-    let edgeCount = prompt('What size grid would you like? (Max 100)');
+    let edgeCount = prompt('What size grid would you like? (Max 100)'); // gets edge length as input
 
     if (edgeCount <= 100) {
 
-        boxCreate(edgeCount);
+        boxCreate(edgeCount); // passes the input to the box creation function
 
     } else {
         
