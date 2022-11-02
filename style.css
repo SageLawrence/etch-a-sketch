@@ -9,7 +9,7 @@ html {
 .divBox {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+
     flex: 1; /* come back to comment through all flex property uses */
     height: 1000px;
 }
@@ -22,7 +22,7 @@ html {
 
 #container {
     display: flex;
-    gap: 0px;
+
     height: 1000px;
     width: 1000px;
     flex-basis: 0;
