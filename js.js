@@ -26,9 +26,9 @@ function boxCreate(edgeCount) { // function to create gid of specified size
 
 }
 
-const button = document.querySelector('.selector'); // sets button to variable
+const selectButton = document.querySelector('.selector'); // sets button to variable
 
-button.addEventListener('click', removeGrid); // button listens for click and runs function to remove old grid
+selectButton.addEventListener('click', removeGrid); // button listens for click and runs function to remove old grid
 
 function removeGrid() {
 
@@ -81,5 +81,17 @@ function sketch() { // alters box when it is hovered over
         }
 
     this.style.backgroundColor = backgroundColor; // sets background color of div based on mouseovers
+
+}
+
+const clear = document.querySelector('.clear'); // sets button to variable
+
+clear.addEventListener('click', clearBoxes); // button listens for click and runs function to clear cells
+
+function clearBoxes() { // clears cells of color
+
+    let boxes = document.querySelectorAll('.div');
+
+    boxes.forEach(box => box.style.backgroundColor = 'rgb(255, 255, 255')
 
 }

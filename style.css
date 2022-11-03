@@ -34,6 +34,10 @@ body {
     align-items: center;
 }
 
-button {
+.selector {
     margin-bottom: 20px;
+}
+
+.clear {
+    margin-top: 20px;
 }
