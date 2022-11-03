@@ -62,25 +62,24 @@ function hoverAdd() {
 
     divs.forEach(div => div.addEventListener('mouseover', sketch)); // adds listener for mouseover to call sketch function
 
-    divs.forEach(div => div.style.backgroundColor = 'rgb(255, 255,255'); // adds white in rgb as the original background color
+    divs.forEach(div => div.style.backgroundColor = 'rgb(255, 255, 255'); // adds white in rgb as the original background color
 
 }
 
 function sketch() { // alters box when it is hovered over
 
-    // console.log(this.style.backgroundColor);
-    //let backgroundColor = this.style.backgroundColor; // retrieves current background color
+    let backgroundColor = this.style.backgroundColor; // retrieves current background color
 
-    //if (backgroundRed > 0) { // not allowing for rgb values to go negative
+        if (backgroundColor === 'rgb(255, 255, 255)') { // if fully white sets color to grey first
 
-        //backgroundRed -= 25.5;
-        //backgroundGreen -= 25.5;
-        //backgroundBlue -= 25.5;
+            backgroundColor = 'rgb(100, 100, 100)';
 
-        //backgroundColor = 'rgb(' + backgroundRed + ',' + backgroundGreen + ',' + backgroundBlue + ')'; // sets background color of div by component
+        } else {
 
-        this.style.backgroundColor = 'black'; // sets background color of div based on mouseovers
+            backgroundColor = 'rgb(0, 0, 0)';
 
-    ///}
+        }
+
+    this.style.backgroundColor = backgroundColor; // sets background color of div based on mouseovers
 
 }
