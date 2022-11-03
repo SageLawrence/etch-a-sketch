@@ -42,9 +42,9 @@ function removeGrid() {
 
 function sizeSelect() {
 
-    let edgeCount = prompt('What size grid would you like? (Max 100)'); // gets edge length as input
+    let edgeCount = prompt('What size grid would you like? (Max 250)'); // gets edge length as input
 
-    if (edgeCount <= 100) {
+    if (edgeCount <= 250) {
 
         boxCreate(edgeCount); // passes the input to the box creation function
 

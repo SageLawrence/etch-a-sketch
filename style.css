@@ -14,17 +14,18 @@ html {
 }
 
 .div {
-    border: 1px solid lightgray;
-    border-radius: 10%;
+    /*border: 1px solid lightgray;
+    border-radius: 10%;*/
     flex: 1;
 }
 
 #container {
     display: flex;
-
-    height: 1000px;
-    width: 1000px;
+    height: 1004px;
+    width: 1004px;
     flex-basis: 0;
+    border: 2px solid blueviolet;
+    min-width: 0;
 }
 
 body {
